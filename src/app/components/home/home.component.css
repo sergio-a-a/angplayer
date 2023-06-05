@@ -1,0 +1,30 @@
+.layout-grid{
+    display: grid;
+    grid-row: 100px 1000px 200px;
+    grid-column: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header header"
+    "angplayer angplayer angplayer videos"
+    "aboutme aboutme aboutme aboutme";
+}
+
+app-angplayer{
+    grid-area: angplayer;
+    text-align: center;
+}
+
+app-video-selection{
+    grid-area: videos;
+    text-align: center;
+
+}
+
+app-aboutme{
+    grid-area: aboutme;
+    text-align: center;
+}
+
+app-header{
+    grid-area: header;
+    text-align: center;
+}
